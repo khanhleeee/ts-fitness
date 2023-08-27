@@ -14,3 +14,24 @@ body,
   font-family: 'DM Sans', sans-serif;
   @apply text-secondary bg-primary-light;
 }
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-primary-main/30;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-dark/30 rounded-full;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-dark/50 transition duration-200;
+}
